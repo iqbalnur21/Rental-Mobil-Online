@@ -4,7 +4,7 @@
             <h1>Data Customer</h1>
         </div>
         
-        <a href="<?php echo base_url('admin/data_customer/tambah_customer') ?>" class="btn btn-primary mb-3">Tambah Customer</a>
+        <a href="<?php echo base_url('admin/Data_Customer/tambah_customer') ?>" class="btn btn-primary mb-3">Tambah Customer</a>
 
         <?php echo $this->session->flashdata('pesan') ?>        
 
@@ -37,8 +37,8 @@
 
                         <div class="row">
 
-                            <a href="<?php echo base_url('admin/data_customer/delete_customer/').$cs->id_customer ?>" class="btn btn-sm btn-danger mr-2"><i class="fas fa-trash"></i></a>
-                            <a href="<?php echo base_url('admin/data_customer/update_customer_aksi/').$cs->id_customer ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                            <a onclick="return confirm('Yakin Ingin Hapus Data Customer Ini ?')" href="<?php echo base_url('admin/Data_Customer/delete_customer/').$cs->id_customer ?>" class="btn btn-sm btn-danger mr-2"><i class="fas fa-trash"></i></a>
+                            <a href="<?php echo base_url('admin/Data_Customer/update_customer/').$cs->id_customer ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
                     </td>
                 </tr>
 

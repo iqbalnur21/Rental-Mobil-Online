@@ -6,10 +6,10 @@
 	</div>
 
 	<?php foreach ($type as $tp) : ?>
-	<form method="POST" action="<?php echo base_url('admin/data_type/update_type_aksi') ?>">
+	<form method="POST" action="<?php echo base_url('admin/Data_Type/update_type_aksi') ?>">
 		
 		<div class="form-group">
-			<label>Kode Type</label>
+			<label>Kode Tipe</label>
 			<input type="hidden" name="id_type" value="<?php echo $tp->id_type ?>">
 			<input type="text" name="kode_type" class="form-control" value="<?php echo $tp->kode_type ?>">
 			<?php echo form_error('kode_type','<div class="text-small text-danger">','</div>') ?>
