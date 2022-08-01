@@ -99,12 +99,20 @@
                     <tr>
                         <td></td>
                         <td>
-                            <?php
-                            if ($dt->status == 0) {
-                                echo "<span class='btn btn-danger' disable>Telah Di Rental</span>";
-                            } else {
-                                echo anchor('customer/Rental/tambah_rental/' . $dt->id_mobil, '<button class="btn btn-success">Rental</button>');
-                            } ?>
+								<?php if ($this->session->userdata('id_customer') == NULL) { ?>
+										<a href="<?php echo base_url('Auth/login')?>" class="btn btn-success py-2 mr-1">
+										Rental
+										</a>
+								<?php } else { ?>
+									<?php if ($dt->status == "1") { ?>
+										<a href="<?php echo base_url('customer/Rental/tambah_rental/') . $dt->id_mobil ?>" class="btn btn-success py-2 mr-1">
+											Rental
+										</a>
+									<?php
+									} else {
+										echo '<a class="btn btn-grey py-2 mr-1">Tidak Tersedia</a>';
+									} ?>
+								<?php } ?>
                         </td>
                     </tr>
                 </table>

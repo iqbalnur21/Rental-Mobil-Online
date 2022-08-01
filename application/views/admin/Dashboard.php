@@ -12,8 +12,8 @@
           </div>
           <div class="card-wrap">
             <div class="card-header">
-              <h4>Total Customer</h4>
             </div>
+              <H6>Total Customer</H6>
             <div class="card-body">
               <?php echo $jumlah_customer ?> User
             </div>
@@ -25,8 +25,8 @@
           </div>
           <div class="card-wrap">
             <div class="card-header">
-              <h4>Total Mobil</h4>
             </div>
+              <H6>Total Mobil</H6>
             <div class="card-body">
               <?php echo $jumlah_mobil ?> Mobil
             </div>
@@ -40,8 +40,8 @@
           </div>
           <div class="card-wrap">
             <div class="card-header">
-              <h4>Total Transaksi</h4>
             </div>
+              <H6>Total Transaksi</H6>
             <div class="card-body">
               <?php echo $jumlah_transaksi ?> Transaksi
             </div>
@@ -53,8 +53,8 @@
           </div>
           <div class="card-wrap">
             <div class="card-header">
-              <h4>Pendapatan</h4>
             </div>
+              <h6>Pendapatan</h6>
             <div class="card-body">
               <?php print_r('Rp. '.number_format($pendapatan, 0, ',', '.')) ; ?>
             </div>

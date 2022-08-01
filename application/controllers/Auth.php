@@ -82,4 +82,17 @@ class Auth extends CI_Controller
             redirect('Auth/login');
         }
     }
+	public function reset_password(){
+		$data = array('password' => MD5("12345"));
+        $id = array('id_customer' => $this->session->userdata('id_customer'));
+        $this->Model_App->update_password($id, $data, 'customer');
+
+        $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
+        Password Berhasil Direset ke "12345"
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>');
+        redirect('admin/Data_Customer');
+	}
 }

@@ -122,7 +122,6 @@ class Data_customer extends CI_Controller{
 			</div>');
 			redirect('admin/Data_Customer');
 	}
-
 	public function _rules()
 	{
 		$this->form_validation->set_rules('nama','Nama','required');

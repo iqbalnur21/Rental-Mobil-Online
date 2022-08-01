@@ -56,11 +56,11 @@
                                 <span class="btn btn-sm btn-warning">Logout</span>
                             </a>
                         </li>
-                        <!-- <li class="nav-item">
+                        <li class="nav-item" style="margin-left: -30px;">
                             <a href="<?php echo base_url('Auth/ganti_password') ?>"  class="nav-link">
                                 <span class="btn btn-sm btn-primary">Ganti Password</span>
                             </a>
-                        </li> -->
+                        </li>
                     <?php } else { ?>
                         <li class="nav-item">
                             <a href="<?php echo base_url('register') ?>" type="button" class="nav-link">Daftar</a>
